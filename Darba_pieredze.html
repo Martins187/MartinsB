@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="web_lapa_styles.css">
+    <link rel="stylesheet" href="web_lapa_styles_2.css">
+    <script src ="jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div id="Intro_photo4">
+        <div id = "apaksa" class="bigger_letters intro_bottom1">
+          <div id = "Virsraksts" style="color: whitesmoke; opacity: 0.6;"><i>Darba pieredze</i></div>
+        </div>
+    </div>
+    <div class="header" id="myHeader">
+      <div id = "base">
+          <div id = "sakne" class = "root">
+              <div id = "parent1"   class ="parent">
+                  <div id = "bloks1" class ="bloks">
+                      <button id="bloks1_btn" class = "button">
+                          <a href="Majaslapa.html" style="text-decoration: none; color: whitesmoke;">Sākums</a>
+                      </button>
+                  </div>
+                  <div id = "bloks2" class ="bloks">
+                      <button id="bloks2_btn" class = "button">
+                          <a href="Izglitiba.html" style="text-decoration: none; color: whitesmoke;">Izglītība</a>
+                      </button>
+                  </div>
+                  <div id ="bloks3" class = "bloks">
+                    <button id="bloks3_btn" class = "special_button">
+                        <a href="Darba_pieredze.html" style="text-decoration: none; color: whitesmoke;">Darba pieredze</a>
+                    </button>
+                  </div>
+                  <div id ="bloks4" class = "bloks">
+                      <button id="bloks4_btn" class = "button">
+                          <a href = "Galerija.html" style="text-decoration: none; color: whitesmoke;">Galerija</a>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="content">
+        <div class = "saturs">
+          <div class ="saturs3">
+              <h3>2016. gads</h3>
+              <p>Dārznieks</p>
+              <p><i>SIA "RBSSkALS SERVISS"</i></p>
+          </div>
+          <div class = "saturs2">
+              <img src="https://p2.piqsels.com/preview/923/505/118/farm-farmer-spring-garden-thumbnail.jpg" style = "height: 100%;" alt="Skolas bilde">
+          </div>
+        </div>
+        <div class = "saturs">
+          <div class = "saturs3">
+              <h3>2019. gads</h3>
+              <p>Viesmīļa palīgs</p>
+              <p><i>Restorāns "GUTENBERGS"</i></p>
+          </div>
+          <div class = "saturs2">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR77UEUihTbhvcCMVak3kEh2Z3RWqnmO6sAAA&usqp=CAU" style = "height: 100%;" alt="Skolas bilde">
+          </div>
+        </div> 
+        <div class = "saturs">
+          <div class = "saturs3">
+              <h3>2019.- 2020. gads</h3>
+              <p>Arhitekta palīgs</p>
+              <p><i>SIA "Sestais stils"</i></p>
+          </div>
+          <div class = "saturs2">
+              <img src="https://storage.needpix.com/rsynced_images/architect-3979490_1280.jpg" style = "height: 100%;" alt="Skolas bilde">
+          </div>
+        </div> 
+      </div>
+    
+    <script>
+    window.onscroll = function() {myFunction(), scrollFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 50) {
+        document.getElementById("Virsraksts").classList.remove("bigger_letters");
+        document.getElementById("Virsraksts").classList.add("smaller_letters");
+        document.getElementById("apaksa").classList.add("intro_bottom2");
+        document.getElementById("apaksa").classList.remove("intro_bottom1");
+        } 
+        else {
+        document.getElementById("Virsraksts").classList.remove("smaller_letters");
+        document.getElementById("Virsraksts").classList.add("bigger_letters");
+        document.getElementById("apaksa").classList.add("intro_bottom1");
+        document.getElementById("apaksa").classList.remove("intro_bottom2");
+        }
+    }
+    
+    $(function() {
+
+      $(".bloks").on("mouseover", function(){
+          console.log(this);
+          var panelID = $(this).attr("id");
+          $("#" + panelID + "_btn").stop();
+          // $("#Intro_photo").addClass("pic_change");
+          // $("#Intro_photo").removeClass("Intro_photo");
+          $("#" + panelID + "_btn").addClass("dog_pics");
+      });
+
+      // $(".bloks").on("mouseleave", function(){
+      //     console.log(this);
+      //     var panelID = $(this).attr("id");
+      //     $("#" + panelID + "_btn").stop();
+      //     // $("#Intro_photo").removeClass("pic_change");
+      //     // $("#Intro_photo").addClass("Intro_photo");
+      //     $("#" + panelID + "_btn").addClass("dog_pics_out");
+
+      // }); //Kā to izdarīt?
+    })
+
+    </script>
+</body>
+</html>

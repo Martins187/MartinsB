@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balcuns Martins</title>
+    <script src ="jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="web_lapa_styles.css">
+</head>
+<body>
+<div>
+    <div>
+        <div id = "Intro_photo"></div>
+    </div>
+    <div id = "base">
+        <div id = "myHeader" class = "root">
+            <div id = "parent1"   class ="parent">
+                <div id = "bloks1" class ="bloks">
+                    <h2 id = "Virsraksts1">hey</h2>
+                    <button id="bloks1_btn" class = "button">cau</button>
+                </div>
+                <div id = "bloks2" class ="bloks">
+                    <h2 id = "Virsraksts2">hey</h2>
+                    <button id="bloks2_btn" class = "button">cau</button>
+                </div>
+                <div id ="bloks3" class = "bloks">
+                    <h2 id = "Virsraksts3">hey</h2>
+                    <button id="bloks3_btn" class = "button">cau</button>
+                </div>
+                <div id ="bloks4" class = "bloks">
+                    <h2 id = "Virsraksts4">hey</h2>
+                     <button id="bloks4_btn" class = "button">cau</button>
+                </div>
+            
+            </div>
+            <div class = "parent">
+                <div class = "container"></div>
+                <div id = "vines" class = "container">
+                    <div id = "bloks22" class = "bloks2">
+                        <div id = "dog1" style="height: 25%;"><img src="https://static.boredpanda.com/blog/wp-content/uploads/2018/07/funny-dog-balloons-ceiling-fb__700-png__700.jpg" alt="Sunis" width="100%"></div>
+                        <div id = "dog2" style = "height: 25%"> <img src="https://www.liveabout.com/thmb/3hWvLy8f_trcdM0gT7eKQqcYR_w=/500x375/smart/filters:no_upscale()/dog-funny-face-58b8ecd55f9b58af5c9bd15d.jpg" alt="Suniss" width = "100%"></div>
+                        <div id = "dog3"style = "height: 25%"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6P1aHhxQXam-ftMkgRmbRVoeGUTuUiqOCSA&usqp=CAU" alt="Suniss" width="100%"></div>
+                    </div>
+                </div>
+                <div class = "container"></div>
+                <div class = "container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <img src="sakne.JPG" alt="" width="100%">
+    </div>
+</div>
+<script>
+    
+    $(function() {
+        //  $("#btn1").hide(400);
+        //  $("#bloks1").on("mouseover", function(){
+        //     $("#btn1").show(400);
+        //     $("#Virsraksts").hide(400);
+        //  })
+        //  $("#bloks1").on("mouseleave", function(){
+        //     $("#btn1").hide(400);
+        //     $("#Virsraksts").fadeIn(400);
+        // })
+        for (i = 1; i <= 4; i++){
+            $("#bloks" + i + "_btn").hide();
+            $("#Virsraksts" + i).css("position", "fixed");
+        }
+
+        $(".bloks").on("mouseover", function(){
+            console.log(this);
+            var panelID = $(this).attr("id");
+            $("#" + panelID + "_btn").stop();
+            $("#" + panelID + "_btn").fadeIn(200);
+        }); //Kā to izdarīt?
+
+        $(".bloks").on("mouseleave", function(){
+            console.log(this);
+            var panelID = $(this).attr("id");
+            $("#" + panelID + "_btn").stop();
+            $("#" + panelID + "_btn").fadeOut(200);
+        }); //Kā to izdarīt?
+ 
+
+    // })
+
+        //  $("#btn2").hide();
+        //  $("#bloks2").on("mouseover", function(){
+        //     $("#btn2").stop();
+        //     $("#btn2").slideDown(200);
+        //     $("#Virsraksts2").css("position", "static");
+        //  })
+        //  $("#bloks2").on("mouseleave", function(){
+        //     $("#btn2").stop();
+        //     $("#btn2").slideUp(300);
+        //  })
+         
+
+
+        //  $("#bloks22").hide();
+        //  $("#bloks2").on("mouseover", function(){
+        //     $("#bloks22").stop();
+        //     $("#bloks22").slideDown(600);
+        //  })
+        //  $("#bloks2").on("mouseleave", function(){
+        //     $("#bloks22").stop();
+        //     $("#bloks22").slideUp(400);
+        //  })
+
+        //  $("#bloks22").hide();
+        //  $("#bloks2").on("mouseover", function(){
+        //     $("#bloks22").stop();
+        //     $("#bloks22").slideDown(600);
+        //  })
+        //  $("#bloks2").on("mouseleave", function(){
+        //     $("#bloks22").stop();
+        //     $("#bloks22").slideUp(400);
+        //  })
+
+
+         
+         $("#dog1").on("mouseover", function(){
+            //  $("#dog1").stop();
+             $("#dog1").addClass("dog_pics");
+             $("#dog1").removeClass("dog_pics_out");
+         })
+         $("#dog1").on("mouseleave", function(){
+            //  $("#dog1").stop();
+             $("#dog1").addClass("dog_pics_out");
+             $("#dog1").removeClass("dog_pics");
+         })
+         $("#dog2").on("mouseover", function(){
+            //  $("#dog1").stop();
+             $("#dog2").addClass("dog_pics");
+             $("#dog2").removeClass("dog_pics_out");
+         })
+         $("#dog2").on("mouseleave", function(){
+            //  $("#dog1").stop();
+             $("#dog2").addClass("dog_pics_out");
+             $("#dog2").removeClass("dog_pics");
+         })
+         $("#dog3").on("mouseover", function(){
+            //  $("#dog1").stop();
+             $("#dog3").addClass("dog_pics");
+             $("#dog3").removeClass("dog_pics_out");
+         })
+         $("#dog3").on("mouseleave", function(){
+            //  $("#dog1").stop();
+             $("#dog3").addClass("dog_pics_out");
+             $("#dog3").removeClass("dog_pics");
+         })
+
+
+
+        //  $("#btn2").hide();
+        //  $("#bloks2").on("mouseover", function(){
+        //     $("#btn2").show();
+        //     $("#Virsraksts2").hide();
+        //  })
+        //  $("#bloks2").on("mouseleave", function(){
+        //     $("#btn2").hide();
+        //     $("#Virsraksts2").show();
+        //  })
+        //  $("#btn2").on("click", function(){
+        //      $("#bloks2").fadeToggle(500);
+        //  })
+        //  $("#btn3").on("click", function(){
+        //      $("#bloks3").fadeToggle(500);
+        //  })
+        //  $("#btn4").on("click", function(){
+        //      $("#bloks4").fadeToggle(500);
+        //  })
+    })
+</script>
+    
+</body>
+</html>
+<script>
+     window.onscroll = function() {myFunction()};
+      
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+</script>

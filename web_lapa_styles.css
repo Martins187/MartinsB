@@ -1,0 +1,180 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Intro_photo{
+    background-image: url("IMG_3749.JPG");
+    height: 760px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Intro_photo2{
+    background-image: url("IMG_6777.JPG");
+    height: 760px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Intro_photo3{
+    background-image: url("IMG_7244.JPG");
+    height: 760px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Intro_photo4{
+    background-image: url("IMG_6783.JPG");
+    height: 760px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bigger_letters{
+    font-size: 60px;
+}
+.smaller_letters{
+    font-size: 30px;
+}
+#virsraksts{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .pic_change{
+    background-image: url("IMG_6777.JPG");
+    height: 1000px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.intro_bottom1{
+    position: relative;
+    height: 30%;
+    top: 90%;
+    margin: 20px;
+}
+.intro_bottom2{
+    position: relative;
+    height: 30%;
+    top: 95%;
+    margin: 20px;
+}
+#base{
+    background: transparent;
+    background-size: 100%;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.root{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.parent{
+    width: 100%;
+    background: transparent;
+    display:flex;
+    text-align: center;
+    color: white;
+
+}  
+#parent1{
+    
+}
+
+.bloks{
+    background-color: rgb(36, 36, 36); 
+    /* Pagaidām */
+    height: 50px;
+    width: 25%;
+    margin: 0px 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 600px;
+    width: 25%;
+    margin: 0px 5px 5px 5px;
+    display: flex;
+    justify-content: center;
+}
+.bloks2{
+    background-color: grey;
+    height: 600px;
+    width: 100%;
+    /* margin: 0px 5px 5px 5px; */
+    border: 1px solid black;
+    /* display: flex;
+    justify-content: center; */
+}
+.button{
+    color:white;
+    font: arial;
+    font-size: large;
+    background-color: rgb(72, 72, 72);
+    height: 80%;
+    width: 90%;
+    position: relative;
+    /* box-shadow:5px 5px rgb(65, 65, 65); */
+    margin: 5px 5px;
+}
+.button:hover{
+    
+}
+.special_button{
+    font: arial;
+    font-size: large;
+    background-color: rgb(0, 0, 0);
+    height: 80%;
+    width: 90%;
+    position: relative;
+    /* box-shadow:5px 5px rgb(65, 65, 65); */
+    margin: 5px 5px;
+
+}
+.special_button:hover{
+
+}
+.dog_pics{
+    transition: transform.2s;
+}
+.dog_pics:hover{
+    transform: scale(1.1);
+}
+.dog_pics_out{
+    transition: transform.1.5s;
+}
+.dog_pics_out:hover{
+    transform: scale(1);
+}
+.saturs{
+    display: flex;
+    justify-content: center;
+    height:110px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+}
+.saturs2{
+    display: flex;
+    justify-content: center;
+    height:100px;
+    width: 50%;
+}
+.saturs3{
+    height:100px;
+    width: 50%;
+    text-align: center;
+}

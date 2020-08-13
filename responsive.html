@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .content{
+            background-color: rgb(60, 62, 67);
+            color:seashell;
+            margin-top: -15px;
+        }
+        .container{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .row{
+            margin: 15px;
+            padding: 15px;
+        }
+        .column{
+            display: inline-block
+        }
+        .body{
+            width: 66%;
+        }
+        .sidebar{
+            width: 33%;
+        }
+        @media (max-width: 600px){
+            .body{
+                width: 80%
+            }
+            .container{
+                width: 600px;
+            }
+            .mobile{
+                border: 45px solid red
+            }
+        }
+        @media (max-width: 500px) and (min-width: 401px){
+            body{
+                width: 100%;
+                background-image: url(https://i.pinimg.com/originals/e3/ea/78/e3ea780936fa4fd667123bd663afe05e.gif);
+            }
+            .container{
+                width: 800px;
+            }
+            .mobile{
+                border: 15px solid rgb(226, 46, 175)
+            }
+        }
+        @media (max-width: 400px){
+            body{
+                width: 100%;
+                background-image: url();
+                
+            }
+            .container{
+                width: 1000px;
+            }
+            .mobile{
+                border: 5px solid rgb(190, 226, 46)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="container mobile">
+            <div class="row">
+                <div class="column body">
+                    body
+                </div>
+                <div class="column sidebar">
+                    side
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
